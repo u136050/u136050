@@ -865,7 +865,7 @@ q:after{content:"";}
 	font-size:28px;
 	line-height:28px;
 	color:#2e3536;
-	background: url(../images/separator02.png) no-repeat 100% 50%;
+	background: url (../images/separator02.png) no-repeat 100% 50%;
 }
 .heading-box .text-box{
 	height:1%;
