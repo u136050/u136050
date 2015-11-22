@@ -1,9 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
 <?IncludeTemplateLangFile(__FILE__);?>
-<?if(!CSite::InDir('/')):?><a href="/"><?endif;?>
-    <img src=<?=SITE_TEMPLATE_PATH;?>"/_include/images/logo.png"
-         alt="Novux" />
-    <?if(!CSite::InDir('/')):?></a><?endif;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang=<?=LANGUAGE_ID?>>
 <head>
@@ -97,19 +93,19 @@
         <div class="roundabout-holder large">
             <ul id="myRoundabout">
                 <li>
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/_include/images/bg-image.gif" alt="image description" width="100%" />
+                    <img src="<?=SITE_TEMPLATE_PATH;?>/_include/images/slider1.jpg" alt="image description" width="100%" />
                     <div class="image">
 
                     </div>
                 </li>
                 <li>
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/_include/images/bg-image.gif" alt="image description" width="100%" />
+                    <img src="<?=SITE_TEMPLATE_PATH;?>/_include/images/slider2.jpg" alt="image description" width="100%" />
                     <div class="image">
 
                     </div>
                 </li>
                 <li>
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/_include/images/bg-image.gif" alt="image description" width="100%" />
+                    <img src="<?=SITE_TEMPLATE_PATH;?>/_include/images/slider3.jpg" alt="image description" width="100%" />
                     <div class="image">
 
                     </div>
