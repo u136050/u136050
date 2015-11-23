@@ -27,58 +27,39 @@
 <div class="header-wrap">
     <div id="header">
         <div class="header-holder">
-            <div class="wrap">
-                <h1 class="logo"><a href="index.html">Synoptic</a></h1>
-                <ul id="nav" class="ddsmoothmenu">
-                    <li class="active"><a href="index.html" class="home">Home</a></li>
-                    <li><a href="about.html"><span><em>About</em></span></a></li>
-                    <li>
-                        <a href="#"  class="with-drop"><span><em>Styles</em></span></a>
-                        <ul class="drop">
-                            <li>
-                                <a href="#" class="with-drop">Color variations</a>
-                                <ul class="drop2">
-                                    <li><a href="../markup/index.html">Black</a></li>
-                                    <li><a href="../colors/midnight-blue/index.html">Midnight blue</a></li>
-                                    <li><a href="../colors/azure/index.html">Azure</a></li>
-                                    <li><a href="../colors/cerulean/index.html">Cerulean</a></li>
-                                    <li><a href="../colors/cofee/index.html">Coffee</a></li>
-                                    <li><a href="../colors/emerald/index.html">Emerald</a></li>
-                                    <li><a href="../colors/contrast-green/index.html">Contrast green</a></li>
-                                    <li><a href="../colors/camouflage-green/index.html">Camouflage green</a></li>
-                                    <li><a href="../colors/indigo/index.html">Indigo</a></li>
-                                    <li><a href="../colors/amethyst/index.html">Amethyst</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="with-drop">Slider variations</a>
-                                <ul id="sliderSwitch" class="drop2">
-                                    <li id="slider1"><a href="index.html">Loooped slider</a></li>
-                                    <li id="slider2"><a href="index-slider02.html">Loooped slider(right)</a></li>
-                                    <li id="slider3"><a href="index-slider03.html">Roundabout slider</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html"><span><em>Blog</em></span></a></li>
-                    <li><a href="portfolio.html"><span><em>Portfolio</em></span></a></li>
-                    <li><a href="market.html"><span><em>Market</em></span></a></li>
-                    <li><a href="contacts.html"><span><em>Contacts</em></span></a></li>
-                </ul>
-            </div>
-            <div class="form-wrap">
+            <h class="logo"><a href="index.html">Synoptic</a></h>
+
+            <?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
+	"COMPONENT_TEMPLATE" => ".default",
+		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+		"MENU_CACHE_TYPE" => "A",	// Тип кеширования
+		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+		"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+			0 => "",
+		),
+		"MAX_LEVEL" => "2",	// Уровень вложенности меню
+		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+		"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+		"DELAY" => "N",	// Откладывать выполнение шаблона меню
+		"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+	),
+	false
+);?>
+
+                <div class="form-wrap">
                 <form action="#" class="search-form">
                     <fieldset>
-                        <span class="text-wrap"><input type="text" class="text" value="Start searching..." /></span>
-                        <input type="submit" class="submit" value="Start searching..." />
+                        <span class="text-wrap"><input type="text" class="text" value="Поиск..." /></span>
+                        <input type="submit" class="submit" value="Поиск..." />
                     </fieldset>
                 </form>
                 <form action="#" class="login-form">
                     <fieldset>
-                        <input type="button" class="button sign-up" value="Sign up" />
-                        <input type="button" class="button sign-in" value="Sign in" />
-                        <span class="text-wrap"><input type="text" class="text" value="Password..." /></span>
-                        <span class="text-wrap"><input type="text" class="text" value="Login..." /></span>
+                        <input type="button" class="button sign-up" value="Регистрация" />
+                        <input type="button" class="button sign-in" value="Погнали!" />
+                        <span class="text-wrap"><input type="text" class="text" value="Пароль..." /></span>
+                        <span class="text-wrap"><input type="text" class="text" value="Логин..." /></span>
                     </fieldset>
                 </form>
             </div>
