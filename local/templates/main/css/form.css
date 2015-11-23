@@ -1,7 +1,7 @@
 .outtaHere {
 	position:absolute;
-	left:-3000px;
 }
+	left:-3000px;
 /* radio buttons */
 .radioArea, .radioAreaChecked {
 	float:left;
