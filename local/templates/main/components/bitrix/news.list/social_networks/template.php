@@ -26,7 +26,7 @@ $this->setFrameMode(true);
 	<?if (!empty($arResult)):?>
 	<ul class="social-list">
 		<?foreach($arResult["ITEMS"] as $key => $arItem):?>
-			<li><a href="<?=$arItem["PROPERTIES"]["URL"]["VALUE"]?>" class="background: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>) no-repeat" class=" social4 fadeThis"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>" height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>" alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"];?>"/><span class="hover"><?=$arItem["PREVIEW_PICTURE"]["TITLE"];?></span></a></li>
+			<li><a href="<?=$arItem["PROPERTIES"]["URL"]["VALUE"]?>" class="background: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>) no-repeat" class="social4 fadeThis"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>" height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>" alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"];?>"/><span class="hover"><?=$arItem["PREVIEW_PICTURE"]["TITLE"];?></span></a></li>
 		<?endforeach;?>
 	</ul>
 	<?endif?>

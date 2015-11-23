@@ -18,7 +18,7 @@ $this->setFrameMode(true);
 		<div class="roundabout-holder large">
 			<?if (!empty($arResult)):?>
 			<ul id="myRoundabout">
-				<?foreach($arResult["ROWS"] as $key => $arItem):?>
+				<?foreach($arResult["ROWS"]["0"] as $key => $arItem):?>
 				<li>
 					<img src="<?=$arItem["PICTURE"]["SRC"];?>" alt="<?=$arItem["PICTURE"]["ALT"];?>" width="<?=$arItem["PICTURE"]["WIDTH"]?>" height="<?=$arItem["PICTURE"]["HEIGHT"]?>" />
 					<div class="image">
