@@ -1,0 +1,28 @@
+2015-11-24 21:09:07 -  - exec CUpdateClient::GetUpdatesList
+2015-11-24 21:09:07 -  - exec CUpdateClient::CollectRequestData
+2015-11-24 21:09:07 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 21:09:07 - NCRD01 - [Ux11] Ошибка описания модуля "dev_module". 
+2015-11-24 21:09:07 - GUL01 - Empty query list
+2015-11-24 21:09:07 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 21:46:05 -  - exec CUpdateClient::GetUpdatesList
+2015-11-24 21:46:05 -  - exec CUpdateClient::CollectRequestData
+2015-11-24 21:46:05 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 21:46:05 - NCRD01 - [Ux11] Ошибка описания модуля "dev_module". 
+2015-11-24 21:46:05 - GUL01 - Empty query list
+2015-11-24 21:46:05 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 21:53:55 -  - exec CUpdateClient::GetUpdatesList
+2015-11-24 21:53:55 -  - exec CUpdateClient::CollectRequestData
+2015-11-24 21:53:55 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-11-24 21:53:55 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 21:53:55 - NCRD01 - [Ux11] Ошибка описания модуля "dd_blank_module". [Ux11] Ошибка описания модуля "dev_module". 
+2015-11-24 21:53:55 - GUL01 - Empty query list
+2015-11-24 21:53:55 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-11-24 21:53:55 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 22:13:52 -  - exec CUpdateClient::GetUpdatesList
+2015-11-24 22:13:52 -  - exec CUpdateClient::CollectRequestData
+2015-11-24 22:13:52 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-11-24 22:13:52 - Ux11 - Ошибка описания модуля "dev_module"
+2015-11-24 22:13:52 - NCRD01 - [Ux11] Ошибка описания модуля "dd_blank_module". [Ux11] Ошибка описания модуля "dev_module". 
+2015-11-24 22:13:52 - GUL01 - Empty query list
+2015-11-24 22:13:52 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-11-24 22:13:52 - Ux11 - Ошибка описания модуля "dev_module"
