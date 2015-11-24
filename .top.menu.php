@@ -16,14 +16,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Рейтинги", 
-		"/", 
+		"/raiting/", 
 		Array(), 
 		Array(), 
-		"CBXFeatures::IsFeatureEnabled('CommonDocuments')" 
+		"" 
 	),
 	Array(
 		"Периодика", 
-		"/", 
+		"/periodika/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -37,7 +37,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Сотруднику", 
-		"/", 
+		"/crm/contact/list/", 
 		Array(), 
 		Array(), 
 		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
