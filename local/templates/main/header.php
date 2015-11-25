@@ -27,7 +27,7 @@
 <div class="header-wrap">
     <div id="header">
         <div class="header-holder">
-            <h class="logo"><a href="index.html">Synoptic</a></h>
+            <h class="logo"><a href="/general/">Synoptic</a></h>
 
             <?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
 	"COMPONENT_TEMPLATE" => ".default",
@@ -47,19 +47,12 @@
 	false
 );?>
 
+
                 <div class="form-wrap">
                 <form action="#" class="search-form">
                     <fieldset>
                         <span class="text-wrap"><input type="text" class="text" value="Поиск..." /></span>
                         <input type="submit" class="submit" value="Поиск..." />
-                    </fieldset>
-                </form>
-                <form action="#" class="login-form">
-                    <fieldset>
-                        <input type="button" class="button sign-up" value="Регистрация" />
-                        <input type="button" class="button sign-in" value="Погнали!" />
-                        <span class="text-wrap"><input type="text" class="text" value="Пароль..." /></span>
-                        <span class="text-wrap"><input type="text" class="text" value="Логин..." /></span>
                     </fieldset>
                 </form>
             </div>

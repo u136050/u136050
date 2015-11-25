@@ -1,4 +1,46 @@
 <?
 $aMenuLinks = Array(
+	Array(
+		"rdf", 
+		"/rdf/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"dssdsd", 
+		"/dssdsd/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"вход", 
+		"/vkhod/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Должники", 
+		"/dolzhniki-sotr/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Посещаемость", 
+		"/poseshchaemost-cus/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Главная", 
+		"/general/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
 );
 ?>

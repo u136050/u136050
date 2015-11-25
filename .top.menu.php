@@ -1,15 +1,8 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Наши новости", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Издания", 
-		"/", 
+		"/vyvod-khayl/?clear_cache=Y", 
 		Array(), 
 		Array(), 
 		"" 
@@ -29,18 +22,25 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Сотруднику", 
+		"/dolzhniki-sotr/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
+	),
+	Array(
 		"Читателю", 
-		"/", 
+		"/poseshchaemost-cus/", 
 		Array(), 
 		Array(), 
 		"CBXFeatures::IsFeatureEnabled('Workgroups')" 
 	),
 	Array(
-		"Сотруднику", 
-		"/crm/contact/list/", 
+		"Контакты", 
+		"/index.html", 
 		Array(), 
 		Array(), 
-		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
+		"" 
 	)
 );
 ?>

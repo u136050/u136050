@@ -191,16 +191,16 @@ q:after{content:"";}
 }
 /* navigation end */
 .search-form{
-	float:left;
+	float:right !important;
 	width:274px;
 }
 .search-form .text-wrap{
-	float:left;
+	float:right;
 	background: url(../images/bg-input02.gif) no-repeat;
 	width: 249px;
 }
 .search-form .text{
-	float:left;
+	float:right;
 	margin:0;
 	padding:4px 10px;
 	height: 17px;
@@ -209,7 +209,7 @@ q:after{content:"";}
 	width:229px;
 }
 .search-form .submit{
-	float:left;
+	float:right;
 	background: url(../images/bg-submit.gif) no-repeat;
 	width: 25px;
 	height: 25px;
