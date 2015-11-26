@@ -1,9 +1,7 @@
-    <div class="wrap">
-    <ul id="nav" class="ddsmoothmenu">
-        <li class="active"><a href="#"><span><em style="background-color: brown !important">Рейтинги:</em></span></a></li>
-
+    <div style="margin: 15px;">
+        <ul class="older">
         <? foreach($arResult as $category): ?>
-            <li class="active"><a href="#" title="<?=$category["NAME"]?>"><span><em><?=$category["NAME"]?></em></span></a></li>
+            <li><a href="#"><?=$category["NAME"]?></a></li>
         <? endforeach; ?>
-    </ul>
+        </ul>
     </div>

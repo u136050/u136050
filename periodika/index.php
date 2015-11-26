@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->IncludeComponent("periodika:sections.list", ".default", array(
+$APPLICATION->IncludeComponent("rating:sections.list", ".default", array(
     "IBLOCK_ID" => 32
 ),
     false);

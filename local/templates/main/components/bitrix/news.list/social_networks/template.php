@@ -14,14 +14,8 @@ $this->setFrameMode(true);
 ?>
 
 <div class="column">
-	<h3>Новости</h3>
-	<p>Вы сможете получать самые свежие новости от нас!</p>
-	<form action="#" class="subscribe-form">
-		<fieldset>
-			<span class="text-wrap"><input type="text" class="text" value="E-mail адрес" /></span>
-			<input type="submit" class="submit" value="Подписаться" />
-		</fieldset>
-	</form>
+	<h3>Немного о нас...</h3>
+	<p>Компания вносит свой вклад в развитие образования, повышение благосостояния населения и страны, соблюдая налоговое, таможенное и трудовое законодательство.</p>
 	<h3>Подписывайся!</h3>
 	<?if (!empty($arResult)):?>
 	<ul class="social-list">

@@ -48,14 +48,7 @@
 );?>
 
 
-                <div class="form-wrap">
-                <form action="#" class="search-form">
-                    <fieldset>
-                        <span class="text-wrap"><input type="text" class="text" value="Поиск..." /></span>
-                        <input type="submit" class="submit" value="Поиск..." />
-                    </fieldset>
-                </form>
-            </div>
+                
         </div>
     </div>
 </div>
