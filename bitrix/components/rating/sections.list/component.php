@@ -9,7 +9,7 @@ if ($this->StartResultCache(3600))
     $iblock_id = $arParams["IBLOCK_ID"];
     $arFilter = array("INCLUDE_ELEMENTS"=>"Y" ,"IBLOCK_ID"=>$iblock_id);
     $db_list = GetIBlockElementList($iblock_id, $section_id, array("SORT"=>"ASC"), $cnt, $arFilter);
-        // CIBlockSection::GetList(array("NAME"=>"ASC"), $arFilter, true, array("ID", "NAME", "CODE")); Это только для пораздельного вывода
+        // CIBlockElement::GetList(array("NAME"=>"ASC"), $arFilter, true, array("ID", "NAME", "CODE")); Это только для пораздельного вывода
     while($ar_result = $db_list->GetNext())
     {
         $arResult[] = array(
@@ -20,8 +20,8 @@ if ($this->StartResultCache(3600))
         );
     }
    //  echo '<pre>'; print_r($arResult); echo '</pre>';
-    $this->IncludeComponentTemplate();
 }
+$this->IncludeComponentTemplate();
 ?>
 
 

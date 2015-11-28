@@ -27,7 +27,15 @@
 <div class="header-wrap">
     <div id="header">
         <div class="header-holder">
-            <h class="logo"><a href="/general/">Synoptic</a></h>
+            <h class="logo">
+				<? if ($APPLICATION->GetCurPage() !== "/general/index.php"):?>
+					<a href="/general/">
+				<?endif;?>
+					Synoptic
+				<? if ($APPLICATION->GetCurPage() !== "/general/index.php"):?>
+					</a>
+				<?endif;?>
+			</h>
 
             <?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
 	"COMPONENT_TEMPLATE" => ".default",
@@ -48,7 +56,7 @@
 );?>
 
 
-                
+
         </div>
     </div>
 </div>
