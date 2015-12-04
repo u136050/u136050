@@ -3,7 +3,7 @@ namespace MIET\KPI;
 use Bitrix\Main\Entity;
 use Bitrix\Main\Localization\Loc;
 Loc::loadMessages(__FILE__);
-class KPIEmployeeTable extends Entity\DataManager {
+class KPIDepartmentTable extends Entity\DataManager {
     public static function getFilePath()
     {
         return __FILE__;
