@@ -1,3 +1,3 @@
 <?
-define("ADMIN_MODULE_NAME", "miet.kpi");
+define("ADMIN_MODULE_NAME", "my.mod");
 ?>

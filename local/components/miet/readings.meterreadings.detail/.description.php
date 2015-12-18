@@ -6,14 +6,14 @@ $arComponentDescription = array(
     "SORT" => 20,
     "CACHE_PATH" => "Y",
     "PATH" => array(
-        "ID" => "intranet",
+        "ID" => "intran11et",
         "NAME" => GetMessage("NAME_INTRANET"),
         "CHILD" => array(
-            "ID" => "KPI",
+            "ID" => "K32PI",
             "NAME" => GetMessage("NAME_KPI"),
             "SORT" => 10,
             "CHILD" => array(
-                "ID" => "KPIValue",
+                "ID" => "KP3232IValue",
             )
         ),
     ),

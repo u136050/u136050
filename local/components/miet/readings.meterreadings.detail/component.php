@@ -16,7 +16,6 @@ if($_REQUEST['saveMeterReading']) {
     }
 }
 
-$arResult['SERVICES'] = READINGS\ServicesTable::getList(array('select' => array ('ID', 'UF_SERVICE_NAME')))->fetchAll();
 
 ###Подключение шаблона компонента###
 $this->IncludeComponentTemplate();

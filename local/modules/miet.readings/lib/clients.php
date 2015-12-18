@@ -54,19 +54,9 @@ class ClientTable extends Entity\DataManager {
                 'title' => Loc::getMessage('REGION_FIELD')
             ),
         );
-    }
-            //Описываем все связи с другими таблицами (внешние ключи)
-        new Entity\ReferenceField(
-        'UF_ID_RATING_TITLE',
-        'Bitrix\Iblock\ElementTable',
-        array('=this.UF_ID_RATING_TITLE' => 'ref.ID')
-        ),
-        new Entity\ReferenceField(
-        'UF_ID_TYPE_EDITION',
-        'Bitrix\Iblock\ElementTable',
-        array('=this.UF_ID_TYPE_EDITION' => 'ref.ID')
-        ),
-        );
+
+
+
         }
         public static function validateValue()
         {

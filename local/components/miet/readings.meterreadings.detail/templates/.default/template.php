@@ -8,53 +8,41 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
     <?ShowMessage(array('TYPE' => 'ERROR','MESSAGE' => $arResult['ERROR']));?>
 <?endif;?>
 
-<form name="meterreadingsform" action="<?=POST_FORM_ACTION_URI?>" method="POST">
+<form class="myclass" name="meterreadingsform" action="<?=POST_FORM_ACTION_URI?>" method="POST">
     <table class="formMeterReadings" border="0" cellpadding="10px">
         <tr>
-            <td><?=GetMessage("Surname");?></td>
-            <td><input type="text" name="Surname" value="<?=$REQUEST["UF_EDITION_TITLE"];?>"></td>
+            <td class="fortext"><?=GetMessage("Surname");?></td>
+            <td ><input type="text" name="Surname" value="<?=$REQUEST["UF_FAM"];?>"></td>
         </tr>
         <tr>
-            <td><?=GetMessage("Name");?></td>
-            <td><input type="int" name="Name" value="<?=$REQUEST["UF_ID_RATING_TITLE"];?>"></td>
+            <td class="fortext"><?=GetMessage("Name");?></td>
+            <td><input type="text" name="Name" value="<?=$REQUEST["UF_IMYA"];?>"></td>
         </tr>
         <tr>
-            <td><?=GetMessage("Patronymic");?></td>
-            <td><input type="int" name="Patronymic" value="<?=$REQUEST["UF_ID_TYPE_EDITION"];?>"></td>
+            <td class="fortext"><?=GetMessage("Patronymic");?></td>
+            <td><input type="text" name="Patronymic" value="<?=$REQUEST["UF_OTCH"];?>"></td>
         </tr>
         <tr>
-            <td><?=GetMessage("Flat");?></td>
-            <td><input type="date" name="Birth" value="<?=$REQUEST["UF_DATE_RECEIPED"];?>"></td>
+            <td class="fortext"><?=GetMessage("Flat");?></td>
+            <td><input type="text" name="Flat" value="<?=$REQUEST["UF_FLAT"];?>"></td>
         </tr>
         <tr>
-            <td><?=GetMessage("House");?></td>
-            <td><input type="int" name="House" value="<?=$REQUEST["UF_QUANTITY"];?>"></td>
+            <td class="fortext"><?=GetMessage("House");?></td>
+            <td><input type="text" name="House" value="<?=$REQUEST["UF_HOUSE_BUILDING"];?>"></td>
         </tr>
         <tr>
-            <td><?=GetMessage("Region");?></td>
-            <td><input type="text" name="Region" value="<?=$REQUEST["UF_EDITOR"];?>"></td>
-        </tr>
-       <tr>
-            <td><?=GetMessage("Meter_readings");?></td>
-            <td><input type="text" name="Meter_readings" value="<?=$REQUEST["UF_READINGS"];?>"></td>
-        </tr>
-        <tr>
-            <td><?=GetMessage("Service_name");?></td>
-            <td>
-                <select name="UF_SERVICE_NAME">
-                    <?foreach($arResult["SERVICES"] as $arItem):?>
-                        <option  value="<?=$arItem['ID'];?>"><?=$arItem['UF_SERVICE_NAME'];?></option>
-                    <?endforeach;?>
-                </select>
-            </td>
+            <td class="fortext"><?=GetMessage("Birth");?></td>
+            <td><input type="date" name="Birth" value="<?=$REQUEST["UF_BIRTH_DATE"];?>"></td>
         </tr>
         <tr>
             <td>
-    <input type="submit" name="saveMeterReading" value="<?=GetMessage("Save_readings");?>">
+    <input type="submit" id="submit" name="saveMeterReading" value="<?=GetMessage("Save_readings");?>">
             </td>
         </tr>
     </table>
 </form>
+
+
 
 
 
