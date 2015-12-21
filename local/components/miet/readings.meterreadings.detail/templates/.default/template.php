@@ -11,32 +11,50 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 <form class="myclass" name="meterreadingsform" action="<?=POST_FORM_ACTION_URI?>" method="POST">
     <table class="formMeterReadings" border="0" cellpadding="10px">
         <tr>
-            <td class="fortext"><?=GetMessage("Surname");?></td>
-            <td ><input type="text" name="Surname" value="<?=$REQUEST["UF_FAM"];?>"></td>
+            <td class="fortext"><?=GetMessage("UF_EDITION_TITLE");?></td>
+            <td ><input type="text" name="UF_EDITION_TITLE" value="<?=$REQUEST["UF_FAM"];?>"></td>
         </tr>
         <tr>
-            <td class="fortext"><?=GetMessage("Name");?></td>
-            <td><input type="text" name="Name" value="<?=$REQUEST["UF_IMYA"];?>"></td>
+            <td class="fortext"><?=GetMessage("reit");?></td>
+            <td><select name="reit">
+                    <?foreach($arResult['reit'] as $value):?>
+
+                    <option><?=$value['NAME']?></option>
+
+ <?endforeach;?>
+
+                </select></td>
         </tr>
         <tr>
             <td class="fortext"><?=GetMessage("Patronymic");?></td>
-            <td><input type="text" name="Patronymic" value="<?=$REQUEST["UF_OTCH"];?>"></td>
+            <td>
+
+                <select  name="pereod"  >
+                    <?foreach($arResult['pereod'] as $value):?>
+
+                        <option><?=$value['NAME']?></option>
+
+                    <?endforeach;?>
+
+
+
+                </select>
+
+
+            </td>
         </tr>
         <tr>
-            <td class="fortext"><?=GetMessage("Flat");?></td>
-            <td><input type="text" name="Flat" value="<?=$REQUEST["UF_FLAT"];?>"></td>
+            <td class="fortext"><?=GetMessage("UF_QUANTITY");?></td>
+            <td><input type="text" name="UF_QUANTITY" value="<?=$REQUEST["UF_FLAT"];?>"></td>
         </tr>
         <tr>
-            <td class="fortext"><?=GetMessage("House");?></td>
-            <td><input type="text" name="House" value="<?=$REQUEST["UF_HOUSE_BUILDING"];?>"></td>
+            <td class="fortext"><?=GetMessage("UF_EDITOR");?></td>
+            <td><input type="text" name="UF_EDITOR" value="<?=$REQUEST["UF_HOUSE_BUILDING"];?>"></td>
         </tr>
-        <tr>
-            <td class="fortext"><?=GetMessage("Birth");?></td>
-            <td><input type="date" name="Birth" value="<?=$REQUEST["UF_BIRTH_DATE"];?>"></td>
-        </tr>
+
         <tr>
             <td>
-    <input type="submit" id="submit" name="saveMeterReading" value="<?=GetMessage("Save_readings");?>">
+    <input type="submit" id="submit" name="save" value="<?=GetMessage("Save_readings");?>">
             </td>
         </tr>
     </table>

@@ -22,13 +22,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Сотруднику", 
-		"/dolzhniki-sotr/", 
-		Array(), 
-		Array(), 
-		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
-	),
-	Array(
 		"Читателю", 
 		"/poseshchaemost-cus/", 
 		Array(), 
@@ -38,6 +31,13 @@ $aMenuLinks = Array(
 	Array(
 		"Контакты", 
 		"/kontakty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Добавление издания", 
+		"/dobavlenie-izdaniya.php", 
 		Array(), 
 		Array(), 
 		"" 

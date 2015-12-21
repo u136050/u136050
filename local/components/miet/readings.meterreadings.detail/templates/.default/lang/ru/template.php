@@ -1,9 +1,9 @@
 <?
 $MESS["Patronymic"] = "Периодика";
-$MESS["Surname"] = "Название";
-$MESS["Name"] = "Рейтинг";
-$MESS["Flat"] = "Количество";
-$MESS["House"] = "Издательство";
+$MESS["UF_EDITION_TITLE"] = "Название";
+$MESS["reit"] = "Рейтинг";
+$MESS["UF_QUANTITY"] = "Количество";
+$MESS["UF_EDITOR"] = "Издательство";
 $MESS["Region"] = "Область";
 $MESS["Street"] = "Улица или микрорайон";
 $MESS["City"] = "Город";

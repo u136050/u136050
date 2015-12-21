@@ -10,34 +10,48 @@ Loc::loadMessages(__FILE__);
 
 Class ReadingsManager
 {
-    public static function SaveReadings($arData)
+
+    public static function viewblock($qwer)
+    {
+
+$myresault = \CIBlockElement::GetList(
+$arOrder = Array(), //массив полей сортировки элементов и еёнаправления
+$arFilter = Array('IBLOCK_ID' => $qwer),
+$arGroupBy = false,
+$arNavStartParams = false,
+$arSelectFields = Array('NAME', 'ID' )
+);
+
+        while($arElements = $myresault->Fetch()) {
+            //Получение информации о файле с регламентом расчетапоказателя: ссылка на файл на сервере, название файла и т.д.
+
+            $elements[] = $arElements;
+        }
+        // var_dump($elements);
+        return $elements;
+
+}
+
+
+    public static function Save($arData,$reis,$pereod)
     {
         $db = Application::getConnection();
         $db->startTransaction();
-        /* таблица Клиент, все поля*/
-        $date = explode("-", $arData['Date_receiped']);
+        /* таблица Издание, все поля*/
         $result = ClientTable::add(array(
-            'UF_EDITION_TITLE' => $arData['Surname'],
-            'UF_ID_RATING_TITLE' => $arData['Name'],
-            'UF_ID_TYPE_EDITION' => $arData['Patronymic'],
-            'UF_QUANTITY' => $arData['House'],
-            'UF_EDITOR' => $arData['Region'],
-            'UF_DATE_RECEIPED' => new \Bitrix\Main\Type\Date($date[2].'.'.$date[1].'.'.$date[0])
+            'UF_EDITION_TITLE' => $arData['UF_EDITION_TITLE'],
+            'UF_ID_RATING_TITLE' => $reis,
+            'UF_ID_TYPE_EDITION' => $pereod,
+            'UF_QUANTITY' =>$arData['UF_QUANTITY'],
+            'UF_EDITOR' => $arData['UF_EDITOR']
+
         ));
         if (!$result->isSuccess()) {
             $db->rollbackTransaction();
             return false;
         }
         $idClient = $result->getID();
-        print_r($arData);
-        $date = explode("-", $arData['Show_date']);
-        /* таблица Показания счетчика,только поля дата и показания*/
-        $result = MeterReadingsTable::add(array(
-            'UF_ID_CLIENT' => $idClient,
-            'UF_ID_SERVICE' => $arData['UF_SERVICE_NAME'],
-            'UF_SHOW_DATE' => new \Bitrix\Main\Type\Date($date[2].'.'.$date[1].'.'.$date[0]),
-            'UF_READINGS' => $arData['Readings']
-        ));
+       // print_r($arData);
         if (!$result->isSuccess()) {
             $db->rollbackTransaction();
             return false;

@@ -38,11 +38,7 @@ class ClientTable extends Entity\DataManager {
                 'required' => false,
                 'title' => Loc::getMessage('FAM_FIELD')
             ),
-            'UF_DATE_RECEIPED' => array(
-                'data_type' => 'date',
-                'required' => true,
-                'title' => Loc::getMessage('FLAT_FIELD')
-            ),
+
             'UF_QUANTITY' => array(
                 'data_type' => 'integer',
                 'required' => true,
