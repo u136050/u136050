@@ -98,3 +98,17 @@
 2015-12-18 09:28:35 - NCRD01 - [Ux11] Ошибка описания модуля "dd_blank_module". 
 2015-12-18 09:28:35 - GUL01 - Empty query list
 2015-12-18 09:28:35 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-12-23 19:16:48 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-12-23 19:16:48 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-12-23 19:16:48 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-12-23 19:16:48 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-12-23 19:16:48 - NCRD01 - [Ux11] Ошибка описания модуля "dd_blank_module". 
+2015-12-23 19:16:48 - GUL01 - Empty query list
+2015-12-23 19:16:48 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-12-23 19:16:48 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-12-23 19:16:48 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-12-23 19:16:48 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-12-23 19:16:48 - Ux11 - Ошибка описания модуля "dd_blank_module"
+2015-12-23 19:16:48 - NCRD01 - [Ux11] Ошибка описания модуля "dd_blank_module". 
+2015-12-23 19:16:48 - GUL01 - Empty query list
+2015-12-23 19:16:48 - Ux11 - Ошибка описания модуля "dd_blank_module"
